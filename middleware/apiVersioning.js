@@ -30,3 +30,5 @@ const contentTypeVersioning = (version) = (req, res, next)=>{
     })
   }
 }
+
+module.exports = {urlVersioning, headerVersioning, contentTypeVersioning}
