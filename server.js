@@ -4,7 +4,7 @@ const {configureCors} = require('./config/corsConfig')
 const { requestLogger, addTimeStamp } = require('./middleware/customMiddleware')
 const app = express()
 const PORT = process.env.PORT || 3000
-
+const { globalErrorHandler } = require('./middleware/errorHandler')
 
 // json middleware
 app.use(express.json())
